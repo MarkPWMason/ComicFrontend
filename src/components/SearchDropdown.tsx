@@ -17,6 +17,9 @@ const SearchDropdown = ({
   const filteredSearch = values.filter((v: any) => {
     return v.value.toLowerCase().includes(search.toLowerCase());
   });
+
+  const handleFocus = (event: any) => event.target.select();
+
   return (
     <div className={styles.dropdown}>
       <input
@@ -27,6 +30,7 @@ const SearchDropdown = ({
           setDisplay(true);
           setSearch(e.currentTarget.value);
         }}
+        onFocus={handleFocus}
       />
       {search.length > 0 && (
         <div
