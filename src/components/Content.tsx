@@ -40,7 +40,7 @@ const Content = () => {
   if (characters === null) {
     //fetch the data from /getAllCharecters if it returns do setCha...
     //if it doesn't then setCh... to [] so that it doesn't loop
-    fetch('http://localhost:5000/getAllCharacters', { method: 'GET' })
+    fetch('http://mmmarvel-backend-env.eba-vypt3dk2.eu-west-2.elasticbeanstalk.com:5000/getAllCharacters', { method: 'GET' })
       .then((res) => {
         if (res.status === 200) {
           return res.json();
@@ -65,7 +65,7 @@ const Content = () => {
     resetSearch: boolean
   ) => {
     if (character !== '') {
-      const url = `http://localhost:5000/comics?id=${id}&offset=${offset}`;
+      const url = `http://mmmarvel-backend-env.eba-vypt3dk2.eu-west-2.elasticbeanstalk.com:5000/comics?id=${id}&offset=${offset}`;
       fetch(url, { method: 'GET' })
         .then((res) => {
           if (res.status === 200) {
