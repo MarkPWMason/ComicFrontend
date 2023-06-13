@@ -66,7 +66,7 @@
 
 .comicsContent {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-color: #ffc510;
   border: 10px solid black;
@@ -470,7 +470,7 @@
 
 /* MAX-WIDTH -- 540 */
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 540px), screen and (max-height: 540px) {
   .comicImage {
     width: 100px;
     height: 200px;
@@ -489,6 +489,7 @@
 
   .comicsContent {
     width: 95%;
+    min-height: 100vh;
   }
 
   .paginationBtn {
@@ -507,6 +508,12 @@
 /* MAX-WIDTH -- 430 */
 
 @media screen and (max-width: 435px) {
+  .noComicsImg {
+    width: 300px;
+    align-self: center;
+    border-radius: 10px;
+  }
+
   .comicImage {
     width: 100px;
     height: 200px;
@@ -549,6 +556,12 @@
 /* MAX-WIDTH -- 400 */
 
 @media screen and (max-width: 400px) {
+  .noComicsImg {
+    width: 300px;
+    align-self: center;
+    border-radius: 10px;
+  }
+
   .comicImage {
     width: 100px;
     height: 200px;
@@ -584,3 +597,83 @@
     width: 250px;
   }
 }
+
+@media screen and (max-width: 350px) {
+  .noComicsImg {
+    display: none;
+  }
+
+  .comicImage {
+    width: 50px;
+    height: 100px;
+    margin: 20px 0 0 0;
+  }
+
+  .comicDetails {
+    flex-direction: column;
+    width: 100px;
+    height: 1100px;
+    margin: 0 auto;
+  }
+  .comicDescription {
+    font-size: 20px;
+    width: 150px;
+  }
+
+  .comicsContent {
+    width: 80%;
+    height: auto;
+    min-height: 100vh;
+    margin-bottom: 10px;
+  }
+
+  .paginationBtn a {
+    padding: 8px;
+  }
+
+  .contentContainer {
+    height: 100%;
+  }
+
+  .comicList{
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .comicImage {
+    width: 50px;
+    height: 100px;
+    margin: 20px 0 0 0;
+  }
+
+  .comicDetails {
+    flex-direction: column;
+    width: 100px;
+    height: 1100px;
+    margin: 0 auto;
+  }
+  .comicDescription {
+    font-size: 20px;
+    width: 150px;
+  }
+
+  .comicsContent {
+    width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .paginationBtn a {
+    padding: 8px;
+  }
+
+  .contentContainer {
+    height: 100%;
+  }
+
+  .comicList{
+    width: 250px;
+  }
+}
+
