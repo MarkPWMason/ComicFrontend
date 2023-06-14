@@ -480,6 +480,7 @@
   .comicDetails {
     flex-direction: column;
     width: 300px;
+    height: auto;
     margin: 0 auto;
   }
   .comicDescription {
@@ -523,7 +524,7 @@
   .comicDetails {
     flex-direction: column;
     width: 200px;
-    height: 750px;
+    height: auto;
     margin: 0 auto;
   }
   .comicDescription {
@@ -533,7 +534,7 @@
 
   .comicsContent {
     width: 80%;
-    height: 90%;
+    height: auto;
   }
 
   .paginationBtn {
@@ -571,7 +572,7 @@
   .comicDetails {
     flex-direction: column;
     width: 100px;
-    height: 1100px;
+    height: auto;
     margin: 0 auto;
   }
   .comicDescription {
@@ -612,7 +613,7 @@
   .comicDetails {
     flex-direction: column;
     width: 100px;
-    height: 1100px;
+    height: auto;
     margin: 0 auto;
   }
   .comicDescription {
